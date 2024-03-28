@@ -3,6 +3,8 @@
     padding: 0;
 }
 :root {
+    --main-font-color: #301934;
+    --main-bg-color: #e4d5b7;
     background-color: #d0d0d0;
 }
 a {
@@ -14,19 +16,19 @@ a:hover {
     text-decoration: underline;
 }
 header {
-    background-color: #e4d5b7;
-    color: #301934;
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
     font-weight: bold;
     text-align: center;
     font-size: 2rem;
     padding: 15px 10px;
 }
 footer {
-    background-color: #e4d5b7;
+    background-color: var(--main-bg-color);
     position: fixed;
     bottom: 0;
     width: 100%;
-    color: #301934;
+    color: var(--main-font-color);
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
@@ -35,25 +37,30 @@ footer {
 button {
     font-size: 1.75rem;
     font-weight: bold;
-    color: #301934;
+    color: var(--main-font-color);
     border-radius: 10px;
     border: none;
-    background-color: #e4d5b7;
+    background-color: var(--main-bg-color);
     padding: 15px;
     text-align: center;
     margin-top: 15px;
     cursor: pointer;
 }
 button:hover {
-
+    background-color: #A9957B;
 }
 #countOutput {
     text-align: center;
     font-size: 5rem;
     margin-top: 150px;
-    color: #301934;
+    color: var(--main-font-color);
     font-weight: bold;
 }
 #buttonContainer {
     text-align: center;
+}
+@media screen and (min-width: 800px) {
+    #countOutput {
+        margin-top: 225px;
+    }
 }
