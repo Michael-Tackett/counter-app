@@ -9,7 +9,7 @@
 }
 a {
     text-decoration: none;
-    color: #301934;
+    color: var(--main-font-color);
 }
 a:hover {
     color: #A58BC4;
@@ -19,8 +19,8 @@ header {
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
     font-weight: bold;
-    text-align: center;
     font-size: 2rem;
+    text-align: center;
     padding: 15px 10px;
 }
 footer {
@@ -28,21 +28,21 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    padding: 10px;
     color: var(--main-font-color);
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 10px;
 }
 button {
+    background-color: var(--main-bg-color);
     font-size: 1.75rem;
     font-weight: bold;
+    text-align: center;
     color: var(--main-font-color);
     border-radius: 10px;
     border: none;
-    background-color: var(--main-bg-color);
     padding: 15px;
-    text-align: center;
     margin-top: 15px;
     cursor: pointer;
 }
@@ -50,11 +50,11 @@ button:hover {
     background-color: #A9957B;
 }
 #countOutput {
+    color: var(--main-font-color);
+    font-weight: bold;
     text-align: center;
     font-size: 5rem;
     margin-top: 150px;
-    color: var(--main-font-color);
-    font-weight: bold;
 }
 #buttonContainer {
     text-align: center;
